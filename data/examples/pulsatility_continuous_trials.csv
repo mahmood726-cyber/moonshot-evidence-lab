@@ -1,0 +1,7 @@
+study_id,label,outcome,treatment_label,control_label,treatment_mean,treatment_sd,treatment_n,control_mean,control_sd,control_n,year,source,subgroup,dose_mg
+pi_a,Pulsatility trial A,pulsatility_index,Cilostazol,Placebo,0.08,0.13,81,0.07,0.13,83,2021,trial,low_dose,200
+pi_b,Pulsatility trial B,pulsatility_index,Cilostazol,Placebo,0.14,0.13,81,0.09,0.13,83,2021,trial,low_dose,200
+pi_c,Pulsatility trial C,pulsatility_index,Cilostazol,Placebo,0.10,0.14,81,0.08,0.13,83,2022,trial,mid_dose,250
+pi_d,Pulsatility trial D,pulsatility_index,Cilostazol,Placebo,0.13,0.13,81,0.07,0.13,83,2022,trial,mid_dose,250
+pi_e,Pulsatility trial E,pulsatility_index,Cilostazol,Placebo,0.18,0.16,81,0.10,0.18,83,2023,trial,high_dose,300
+pi_f,Pulsatility trial F,pulsatility_index,Cilostazol,Placebo,0.16,0.15,78,0.11,0.17,79,2024,trial,high_dose,300

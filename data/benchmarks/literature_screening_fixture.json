@@ -1,0 +1,110 @@
+[
+  {
+    "record_id": "pubmed:38000001",
+    "source": "trial",
+    "title": "Randomized blood-pressure reduction trial with mortality endpoint",
+    "year": 2023,
+    "url": "https://pubmed.ncbi.nlm.nih.gov/38000001/",
+    "metadata": {
+      "source": "trial",
+      "sample_size": 640,
+      "missingness": 0.05,
+      "gold_include": true
+    }
+  },
+  {
+    "record_id": "pubmed:38000002",
+    "source": "systematic_review",
+    "title": "Systematic review of stroke prevention interventions",
+    "year": 2024,
+    "url": "https://pubmed.ncbi.nlm.nih.gov/38000002/",
+    "metadata": {
+      "source": "systematic_review",
+      "sample_size": 0,
+      "missingness": 0.02,
+      "gold_include": true
+    }
+  },
+  {
+    "record_id": "ctgov:NCT00000001",
+    "source": "ctgov",
+    "title": "Completed interventional trial with posted results",
+    "year": 2022,
+    "url": "https://clinicaltrials.gov/study/NCT00000001",
+    "metadata": {
+      "source": "ctgov",
+      "study_design": "trial",
+      "sample_size": 320,
+      "missingness": 0.0,
+      "has_results": true,
+      "gold_include": true
+    }
+  },
+  {
+    "record_id": "registry:stroke-001",
+    "source": "registry",
+    "title": "Large stroke registry with prespecified follow-up",
+    "year": 2023,
+    "url": "https://example.org/registry/stroke-001",
+    "metadata": {
+      "source": "registry",
+      "sample_size": 1040,
+      "missingness": 0.12,
+      "gold_include": true
+    }
+  },
+  {
+    "record_id": "ctgov:NCT00000002",
+    "source": "ctgov",
+    "title": "Protocol-only registry record without posted results",
+    "year": 2025,
+    "url": "https://clinicaltrials.gov/study/NCT00000002",
+    "metadata": {
+      "source": "ctgov",
+      "study_design": "protocol",
+      "sample_size": 180,
+      "missingness": 0.0,
+      "has_results": false,
+      "gold_include": false
+    }
+  },
+  {
+    "record_id": "preprint:bp-001",
+    "source": "preprint",
+    "title": "Unreviewed preprint of blood-pressure intervention",
+    "year": 2024,
+    "url": "https://example.org/preprint/bp-001",
+    "metadata": {
+      "source": "preprint",
+      "sample_size": 28,
+      "missingness": 0.04,
+      "gold_include": false
+    }
+  },
+  {
+    "record_id": "cohort:legacy-001",
+    "source": "cohort",
+    "title": "Legacy cohort from the 1990s",
+    "year": 1998,
+    "url": "https://example.org/cohort/legacy-001",
+    "metadata": {
+      "source": "cohort",
+      "sample_size": 820,
+      "missingness": 0.03,
+      "gold_include": false
+    }
+  },
+  {
+    "record_id": "cohort:missingness-001",
+    "source": "cohort",
+    "title": "Large cohort with heavy missingness",
+    "year": 2023,
+    "url": "https://example.org/cohort/missingness-001",
+    "metadata": {
+      "source": "cohort",
+      "sample_size": 510,
+      "missingness": 0.45,
+      "gold_include": false
+    }
+  }
+]

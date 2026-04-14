@@ -1,0 +1,7 @@
+study_id,label,outcome,effect_size,variance,comparator,metric,effect_scale,year,source,subgroup,follow_up_months,mean_age,baseline_risk
+eff_ma_a,Trial A,stroke,-0.180000,0.040000,Aspirin vs Control,or,log,2019,trial,community,6,63,0.19
+eff_ma_b,Trial B,stroke,-0.110000,0.030000,Aspirin vs Control,or,log,2020,trial,community,9,65,0.21
+eff_ma_c,Trial C,stroke,-0.270000,0.050000,Aspirin vs Control,or,log,2021,trial,hospital,12,68,0.24
+eff_ma_d,Trial D,stroke,-0.090000,0.060000,Aspirin vs Control,or,log,2022,trial,hospital,18,66,0.18
+eff_ma_e,Trial E,stroke,-0.220000,0.040000,Aspirin vs Control,or,log,2023,registry,community,24,70,0.25
+eff_ma_f,Trial F,stroke,-0.140000,0.035000,Aspirin vs Control,or,log,2024,registry,hospital,30,67,0.22

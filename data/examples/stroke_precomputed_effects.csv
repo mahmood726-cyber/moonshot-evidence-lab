@@ -1,0 +1,5 @@
+study_id,label,outcome,effect_size,variance,comparator,metric,effect_scale,year,source,subgroup,follow_up_months
+eff_a,Extracted OR A,stroke,-0.180000,0.040000,Aspirin vs Control,or,log,2021,trial,community,6
+eff_b,Extracted OR B,stroke,-0.120000,0.028000,Aspirin vs Control,or,log,2022,trial,community,9
+eff_c,Extracted OR C,stroke,-0.230000,0.036000,Aspirin vs Control,or,log,2023,trial,hospital,12
+eff_d,Extracted OR D,stroke,-0.090000,0.050000,Aspirin vs Control,or,log,2024,registry,hospital,18

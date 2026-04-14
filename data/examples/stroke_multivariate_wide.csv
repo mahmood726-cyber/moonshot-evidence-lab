@@ -1,0 +1,5 @@
+study_id,label,metric,effect_scale,year,source,stroke_recurrence__effect,stroke_recurrence__variance,major_bleeding__effect,major_bleeding__variance,stroke_recurrence__major_bleeding__covariance
+mv_a,Study A,or,log,2020,trial,-0.30,0.050,0.12,0.060,0.015
+mv_b,Study B,or,log,2021,trial,-0.18,0.040,0.08,0.050,0.012
+mv_c,Study C,or,log,2022,trial,-0.27,0.055,0.20,0.070,0.018
+mv_d,Study D,or,log,2023,trial,-0.12,0.045,0.05,0.055,0.011

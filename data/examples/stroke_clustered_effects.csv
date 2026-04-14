@@ -1,0 +1,7 @@
+study_id,label,outcome,effect_size,variance,comparator,metric,effect_scale,year,source,endpoint,timepoint_months
+study_a,Study A ischemic stroke,stroke,-0.38,0.050,Aspirin vs Control,or,log,2020,trial,ischemic,6
+study_a,Study A hemorrhagic stroke,stroke,-0.24,0.060,Aspirin vs Control,or,log,2020,trial,hemorrhagic,12
+study_b,Study B ischemic stroke,stroke,0.04,0.045,Aspirin vs Control,or,log,2021,trial,ischemic,6
+study_b,Study B hemorrhagic stroke,stroke,0.16,0.055,Aspirin vs Control,or,log,2021,trial,hemorrhagic,12
+study_c,Study C ischemic stroke,stroke,-0.47,0.058,Aspirin vs Control,or,log,2022,trial,ischemic,6
+study_c,Study C hemorrhagic stroke,stroke,-0.31,0.062,Aspirin vs Control,or,log,2022,trial,hemorrhagic,12

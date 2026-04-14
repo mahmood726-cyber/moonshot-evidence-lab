@@ -1,0 +1,7 @@
+study_id,label,outcome,treatment_label,control_label,treatment_events,treatment_total,control_events,control_total,year,source,subgroup,follow_up_months
+trial_a,Community aspirin A,stroke,Aspirin,Control,12,120,20,118,2021,trial,community,6
+trial_b,Community aspirin B,stroke,Aspirin,Control,15,140,24,139,2022,trial,community,9
+trial_c,Hospital aspirin C,stroke,Aspirin,Control,10,105,18,107,2020,trial,hospital,6
+trial_d,Hospital aspirin D,stroke,Aspirin,Control,14,150,22,148,2023,trial,hospital,12
+trial_e,Registry aspirin E,stroke,Aspirin,Control,25,210,34,205,2021,registry,community,12
+trial_f,Registry aspirin F,stroke,Aspirin,Control,19,180,27,177,2024,registry,hospital,18

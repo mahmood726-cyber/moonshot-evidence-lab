@@ -1,0 +1,7 @@
+study_id,label,treatment_a,treatment_b,effect_size,variance,outcome,metric,effect_scale,year,source
+net_a,Aspirin vs placebo,Aspirin,Placebo,-0.30,0.040,stroke,or,log,2020,trial
+net_b,Clopidogrel vs placebo,Clopidogrel,Placebo,-0.22,0.050,stroke,or,log,2020,trial
+net_c,Cilostazol vs placebo,Cilostazol,Placebo,-0.40,0.060,stroke,or,log,2021,trial
+net_d,Clopidogrel vs aspirin,Clopidogrel,Aspirin,0.05,0.040,stroke,or,log,2021,trial
+net_e,Cilostazol vs aspirin,Cilostazol,Aspirin,-0.10,0.050,stroke,or,log,2022,trial
+net_f,Cilostazol vs clopidogrel,Cilostazol,Clopidogrel,-0.15,0.050,stroke,or,log,2022,trial

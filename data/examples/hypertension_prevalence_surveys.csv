@@ -1,0 +1,7 @@
+study_id,label,outcome,events,total,year,source,region,mean_age,urban_share
+survey_a,Urban survey A,hypertension_prevalence,122,540,2018,survey,urban,51,0.82
+survey_b,Rural survey B,hypertension_prevalence,96,470,2019,survey,rural,48,0.31
+survey_c,Mixed survey C,hypertension_prevalence,144,610,2020,survey,mixed,50,0.57
+survey_d,Urban survey D,hypertension_prevalence,151,590,2021,survey,urban,53,0.79
+survey_e,Rural survey E,hypertension_prevalence,101,520,2022,survey,rural,47,0.28
+survey_f,Mixed survey F,hypertension_prevalence,139,560,2023,survey,mixed,52,0.61
