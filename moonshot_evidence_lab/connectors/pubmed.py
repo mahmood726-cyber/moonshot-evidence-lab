@@ -6,9 +6,7 @@ from dataclasses import dataclass, field
 from typing import Any
 from urllib.parse import urlencode
 from urllib.request import Request, urlopen
-import xml.etree.ElementTree as ET
-
-
+from defusedxml import ElementTree as ET
 DEFAULT_NCBI_EUTILS_BASE_URL = os.getenv(
     "NCBI_EUTILS_BASE_URL",
     "https://eutils.ncbi.nlm.nih.gov/entrez/eutils",
