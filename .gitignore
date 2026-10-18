@@ -2,6 +2,7 @@ __pycache__/
 *.py[cod]
 .venv/
 .pytest_cache/
+PROGRESS.md
 
 data/raw/*
 !data/raw/.gitkeep

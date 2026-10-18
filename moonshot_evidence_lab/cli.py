@@ -95,7 +95,7 @@ def build_parser() -> argparse.ArgumentParser:
     review_parser.add_argument("--condition", default="", help="Optional ClinicalTrials.gov condition")
     review_parser.add_argument("--intervention", default="", help="Optional ClinicalTrials.gov intervention")
     review_parser.add_argument("--pubmed-retmax", type=int, default=5, help="PubMed records to request")
-    review_parser.add_argument("--ctgov-page-size", type=int, default=5, help="ClinicalTrials.gov records to request")
+    review_parser.add_argument("--ctgov-page-size", type=int, default=5, help="ClinicalTrials.gov records per page; all pages are collected")
     review_parser.add_argument("--min-studies", type=int, default=2, help="Minimum studies required to pool a group")
     review_parser.add_argument("--pubmed-pmid", action="append", default=[], help="Seed the pipeline with a specific PMID")
     review_parser.add_argument("--ctgov-nct-id", action="append", default=[], help="Seed the pipeline with a specific NCT ID")
