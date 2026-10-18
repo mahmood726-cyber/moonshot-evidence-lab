@@ -121,6 +121,7 @@ IHME:
 Literature:
 
 - use PubMed and ClinicalTrials.gov for discovery, provenance, and screening
+- ClinicalTrials.gov searches collect all pages. `--page-size` and `--ctgov-page-size` control records per request, not the total result limit; broad queries may take longer. Invalid pages, repeated continuation tokens, and failed requests raise an error instead of returning a partial search.
 - use `NCBI_API_KEY` and `NCBI_EMAIL` environment variables when you want higher-throughput PubMed calls
 - extract ratio-based abstract estimates from PubMed when the abstract reports metrics and confidence intervals
 - derive count-based and mean-difference candidates from ClinicalTrials.gov results tables when denominators are present

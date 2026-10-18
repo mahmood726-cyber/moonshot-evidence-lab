@@ -48,8 +48,11 @@ class ClinicalTrialsGovClient:
         intervention: str | None = None,
         page_size: int = 20,
         count_total: bool = True,
+        page_token: str | None = None,
     ) -> str:
         params: dict[str, Any] = {"pageSize": page_size}
+        if page_token is not None:
+            params["pageToken"] = page_token
         if count_total:
             params["countTotal"] = "true"
         if term:
@@ -156,12 +159,33 @@ class ClinicalTrialsGovClient:
         intervention: str | None = None,
         page_size: int = 20,
     ) -> list[ClinicalTrialRecord]:
-        payload = self.fetch_json(
-            self.build_studies_url(
-                term=term,
-                condition=condition,
-                intervention=intervention,
-                page_size=page_size,
+        """Collect every page, failing rather than returning an incomplete search."""
+        records: list[ClinicalTrialRecord] = []
+        seen_tokens: set[str] = set()
+        page_token = None
+        while True:
+            payload = self.fetch_json(
+                self.build_studies_url(
+                    term=term,
+                    condition=condition,
+                    intervention=intervention,
+                    page_size=page_size,
+                    count_total=page_token is None,
+                    page_token=page_token,
+                )
             )
-        )
-        return self.normalize_studies(payload)
+            if not isinstance(payload, dict):
+                raise ValueError("CT.gov search response must be a JSON object")
+            studies = payload.get("studies")
+            if not isinstance(studies, list) or any(not isinstance(s, dict) for s in studies):
+                raise ValueError("CT.gov search response must contain a studies list of objects")
+            token = payload.get("nextPageToken")
+            if token is not None and (not isinstance(token, str) or not token.strip()):
+                raise ValueError("CT.gov next-page token must be a nonempty string")
+            if token in seen_tokens:
+                raise ValueError("CT.gov repeated a pagination token")
+            records.extend(self.normalize_studies(payload))
+            if token is None:
+                return records
+            seen_tokens.add(token)
+            page_token = token
